@@ -32,7 +32,9 @@ const searchTracks = async (query, type = 'track') => {
       },
     });
 
-    return response.data;
+    const { items } = response.data.tracks;
+
+    return items;
   } catch (error) {
     console.error('Error searching tracks:', error);
     throw error;

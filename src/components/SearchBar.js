@@ -12,12 +12,13 @@ const SearchBar = ({ onSearch }) => {
   return (
     <div>
       <input
+        className='bg-gray-50 border border-gray-300 block'
         type="text"
         placeholder="Search for songs..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className='rounded-full bg-violet-600 text-white px-4' onClick={handleSearch}>Search</button>
     </div>
   );
 };

@@ -1,12 +1,16 @@
 import React from 'react';
 
-function Track({ title, artist, album }) {
+function Track({ title, artists, album }) {
   return (
-    <div className="track">
-      <h3>{title}</h3>
-      <p>Artist: {artist}</p>
-      <p>Album: {album}</p>
-    </div>
+    <>
+      <div>
+        <h3 className='text-white'>{title}</h3>
+        <p className='text-white'>{artists} | {album}</p>
+      </div>
+      <div>
+        <button data-testid='add-song-to-playlist-btn'>+</button>
+      </div>
+    </>
   );
 };
 
