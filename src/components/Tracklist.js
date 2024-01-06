@@ -13,7 +13,7 @@ function Tracklist({ tracks }) {
 
   return (
     <div>
-      <h1 className='text-white'>Results</h1>
+      <h1 className='w-11/12 m-auto text-white my-4 text-4xl font-semibold'>Results</h1>
       {trackListing}
     </div>
   );
